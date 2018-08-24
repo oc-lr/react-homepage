@@ -13,15 +13,15 @@ export const Container = styled.div.attrs({
 `
 
 export const Links = styled.div.attrs({
-  className: "flex sans-serif white f7 justify-center",
+  className: "flex sans-serif white f6 justify-center",
 })``
 
 export const Social = styled.div.attrs({
-  className: "flex sans-serif white f7 justify-center",
+  className: "flex sans-serif white f6 justify-center",
 })``
 
 export const Link = styled.div.attrs({
-  className: "ml2 pointer pa1",
+  className: "ml2 pointer pa1 white-80 hover-white",
 })``
 
 export const Right = styled.div.attrs({
