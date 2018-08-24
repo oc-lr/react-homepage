@@ -11,9 +11,9 @@
     "tachyons": "^4.11.1"
   },
   "scripts": {
-    "start": "NODE_ENV=src react-scripts start",
-    "build": "NODE_ENV=src react-scripts build",
-    "test": "NODE_ENV=src react-scripts test --env=jsdom",
-    "eject": "NODE_ENV=src react-scripts eject"
+    "start": "NODE_PATH=src react-scripts start",
+    "build": "NODE_PATH=src react-scripts build",
+    "test": "NODE_PATH=src react-scripts test --env=jsdom",
+    "eject": "NODE_PATH=src react-scripts eject"
   }
 }
