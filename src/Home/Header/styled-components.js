@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const Container = styled.div.attrs({
-  className: "",
+  className: "cv",
 })`
   display: flex;
   justify-content: space-between;
@@ -18,7 +18,11 @@ export const Links = styled.div.attrs({
 
 export const Social = styled.div.attrs({
   className: "flex sans-serif white f6 justify-center",
-})``
+})`
+  @media (max-width: 30rem) {
+    margin-top: 0.5rem;
+  }
+`
 
 export const Link = styled.div.attrs({
   className: "ml2 pointer pa1 white-80 hover-white",

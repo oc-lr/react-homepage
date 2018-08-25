@@ -1,6 +1,8 @@
 import React from "react"
 import { Container, Links, Social, Link, Right } from "./styled-components"
 import { Logo } from "Logo"
+import { Github } from "glyphs/Github"
+import { Twitter } from "glyphs/Twitter"
 
 export function Header() {
   return (
@@ -19,10 +21,12 @@ export function Header() {
             <Link>Blog</Link>
           </Links>
           <Social>
-            <Link>Tw</Link>
-            <Link>Tg</Link>
-            <Link>GH</Link>
-            <Link>Re</Link>
+            <div className="f cv ml2 pointer">
+              <Github color="#fff" scale={0.5} />
+            </div>
+            <div className="f cv ml2 pointer">
+              <Twitter color="#fff" scale={0.52} />
+            </div>
           </Social>
         </Right>
       </Container>
