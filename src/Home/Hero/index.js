@@ -1,11 +1,14 @@
 import React from "react"
-import { Card, Container } from "./styled-components"
+import { Card, Container, Tagline, Stack } from "./styled-components"
 
 export function Hero() {
   return (
     <Container>
-      <Card />
-      <Card />
+      <Tagline>OrigoChain secures land titles using blockchain</Tagline>
+      <Stack>
+        <Card />
+        <Card />
+      </Stack>
     </Container>
   )
 }

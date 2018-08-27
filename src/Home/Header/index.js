@@ -25,7 +25,7 @@ export function Header() {
               <Github color="#fff" scale={0.5} />
             </div>
             <div className="f cv ml2 pointer">
-              <Twitter color="#fff" scale={0.52} />
+              <Twitter color="#fff" scale={0.53} />
             </div>
           </Social>
         </Right>
