@@ -18,7 +18,7 @@ export function News() {
           <Inc42 scale={0.35} color={color} />
         </div>
         <div className="">
-          <TimesOfIndia scale={0.3} color={"#545454"} />
+          <TimesOfIndia scale={0.3} color={"#444444"} />
         </div>
         <div className="">
           <Bloomberg scale={0.27} color={color} />
