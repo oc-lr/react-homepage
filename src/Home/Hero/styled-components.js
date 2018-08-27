@@ -1,8 +1,10 @@
 import styled from "styled-components"
 
 export const Container = styled.div.attrs({
-  className: "bg-black-10 pv3 ph2 pa5-ns ca fv cv",
-})``
+  className: "pv3 ph2 pa5-ns ca fv cv",
+})`
+  background: rgba(10, 10, 255, 0.03);
+`
 
 export const Card = styled.div.attrs({
   className: "bg-white ml4-ns ml0 mv2 br3 soft-shadow1",
