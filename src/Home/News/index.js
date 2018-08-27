@@ -18,13 +18,13 @@ export function News() {
           <Inc42 scale={0.35} color={color} />
         </div>
         <div className="">
-          <TimesOfIndia scale={0.3} color={color} />
+          <TimesOfIndia scale={0.3} color={"#545454"} />
         </div>
         <div className="">
           <Bloomberg scale={0.27} color={color} />
         </div>
         <div className="">
-          <Hindu scale={0.23} color={color} />
+          <Hindu scale={0.23} color={"#545454"} />
         </div>
         <div className="">
           <Outlook scale={0.23} color={color} />
