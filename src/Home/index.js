@@ -3,6 +3,7 @@ import { Header } from "./Header"
 import { Hero } from "./Hero"
 import { News } from "./News"
 import { Video } from "./Video"
+import { Footer } from "./Footer"
 
 export function Home() {
   return (
@@ -11,6 +12,7 @@ export function Home() {
       <Hero />
       <News />
       <Video />
+      <Footer />
     </div>
   )
 }
