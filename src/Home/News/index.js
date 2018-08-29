@@ -6,7 +6,7 @@ import { Hindu } from "glyphs/Hindu"
 import { Outlook } from "glyphs/Outlook"
 import { IndiaToday } from "glyphs/IndiaToday"
 import { BusinessWorld } from "glyphs/BusinessWorld"
-import { Container, Wrapper } from "./styled-components"
+import { Container, Wrapper, NewsItem } from "./styled-components"
 
 const color = "#696969"
 
@@ -14,27 +14,27 @@ export function News() {
   return (
     <Wrapper>
       <Container>
-        <div className="">
+        <NewsItem>
           <Inc42 scale={0.35} color={color} />
-        </div>
-        <div className="">
+        </NewsItem>
+        <NewsItem>
           <TimesOfIndia scale={0.3} color={"#444444"} />
-        </div>
-        <div className="">
+        </NewsItem>
+        <NewsItem>
           <Bloomberg scale={0.27} color={color} />
-        </div>
-        <div className="">
+        </NewsItem>
+        <NewsItem>
           <Hindu scale={0.23} color={"#545454"} />
-        </div>
-        <div className="">
+        </NewsItem>
+        <NewsItem>
           <Outlook scale={0.23} color={color} />
-        </div>
-        <div className="">
+        </NewsItem>
+        <NewsItem>
           <IndiaToday scale={0.23} color={color} />
-        </div>
-        <div className="">
+        </NewsItem>
+        <NewsItem>
           <BusinessWorld scale={0.33} color={color} />
-        </div>
+        </NewsItem>
       </Container>
     </Wrapper>
   )
