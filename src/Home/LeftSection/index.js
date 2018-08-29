@@ -1,5 +1,8 @@
 import React from "react"
 import { Wrapper, Container } from "./styled-components"
+import { urlPrefix } from "config"
+
+const prefix = process.env["NODE_ENV"] === "production" ? urlPrefix : ""
 
 export function LeftSection({ title = "" }) {
   return (
@@ -25,7 +28,7 @@ export function LeftSection({ title = "" }) {
           </div>
         </div>
         <div className="float">
-          <img src="/images/feature-secure.svg" alt="secure" />
+          <img src={`${prefix}/images/feature-secure.svg`} alt="secure" />
         </div>
       </Container>
     </Wrapper>

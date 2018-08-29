@@ -1,8 +1,12 @@
+import { urlPrefix } from "config"
+
+const prefix = process.env["NODE_ENV"] === "production" ? urlPrefix : ""
+
 export const team = [
   {
     key: 0,
     name: "Nathan Wadhwani",
-    image: "/images/nathan_wadhwani.png",
+    image: `${prefix}/images/nathan_wadhwani.png`,
     designation: "CEO",
     social: [
       {
@@ -15,7 +19,7 @@ export const team = [
   {
     key: 1,
     name: "Jikku Jose",
-    image: "/images/jikku_jose.png",
+    image: `${prefix}/images/jikku_jose.png`,
     designation: "CTO",
     social: [
       {
@@ -34,7 +38,7 @@ export const team = [
   {
     key: 2,
     name: "Nihil Mohan",
-    image: "/images/nikhil_mohan.png",
+    image: `${prefix}/images/nikhil_mohan.png`,
     designation: "System Architect",
     social: [
       { key: 1, network: "github", link: "https://github.com/nikhil-mohan" },
@@ -43,7 +47,7 @@ export const team = [
   {
     key: 3,
     name: "Rakesh BS",
-    image: "/images/rakesh_bs.png",
+    image: `${prefix}/images/rakesh_bs.png`,
     designation: "Blockchain Expert",
     social: [
       {

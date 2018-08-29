@@ -1,8 +1,12 @@
+import { urlPrefix } from "config"
+
+const prefix = process.env["NODE_ENV"] === "production" ? urlPrefix : ""
+
 export const advisors = [
   {
     key: 1,
     name: "Nand Gangwani",
-    image: "/images/nand_gangwani.jpeg",
+    image: `${prefix}/images/nand_gangwani.jpeg`,
     designation: "Financial Advisor",
     social: [
       {
@@ -15,7 +19,7 @@ export const advisors = [
   {
     key: 2,
     name: "Betsabe Botatis",
-    image: "/images/betsabe_botaitis.png",
+    image: `${prefix}/images/betsabe_botaitis.png`,
     designation: "Strategy Advisor",
     social: [
       {
@@ -28,7 +32,7 @@ export const advisors = [
   {
     key: 3,
     name: "Nikhil Kaushik",
-    image: "/images/nikhil_kaushik.png",
+    image: `${prefix}/images/nikhil_kaushik.png`,
     designation: "Investment Advisor",
     social: [
       {
