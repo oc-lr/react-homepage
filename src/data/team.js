@@ -1,5 +1,6 @@
 export const team = [
   {
+    key: 0,
     name: "Nathan Wadhwani",
     image: "/images/nathan_wadhwani.png",
     designation: "CEO",
@@ -12,6 +13,7 @@ export const team = [
     ],
   },
   {
+    key: 1,
     name: "Jikku Jose",
     image: "/images/jikku_jose.png",
     designation: "CTO",
@@ -30,6 +32,7 @@ export const team = [
     ],
   },
   {
+    key: 2,
     name: "Nihil Mohan",
     image: "/images/nikhil_mohan.png",
     designation: "System Architect",
@@ -38,6 +41,7 @@ export const team = [
     ],
   },
   {
+    key: 3,
     name: "Rakesh BS",
     image: "/images/rakesh_bs.png",
     designation: "Blockchain Expert",

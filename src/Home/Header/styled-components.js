@@ -25,8 +25,12 @@ export const Social = styled.div.attrs({
 `
 
 export const Link = styled.div.attrs({
-  className: "ml2 pointer pa1 white-80 hover-white",
-})``
+  className: "ml2 tracked pointer pa1 white-80 hover-white ttu tex",
+})`
+  font-size: 14px;
+  line-height: 30px;
+  /* letter-spacing: 2px; */
+`
 
 export const Right = styled.div.attrs({
   className: "",

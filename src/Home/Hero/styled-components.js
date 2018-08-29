@@ -1,9 +1,11 @@
 import styled from "styled-components"
+import { transparentize } from "polished"
+import { blue } from "config"
 
 export const Container = styled.div.attrs({
   className: "pv3 ph2 pa5-ns ca fv cv",
 })`
-  background: rgba(10, 10, 255, 0.03);
+  background: ${transparentize(0.98, blue)};
 `
 
 export const Card = styled.div.attrs({
