@@ -3,6 +3,7 @@ import { Header } from "./Header"
 import { Hero } from "./Hero"
 import { News } from "./News"
 import { Video } from "./Video"
+import { Team } from "./Team"
 import { Footer } from "./Footer"
 
 export function Home() {
@@ -12,6 +13,7 @@ export function Home() {
       <Hero />
       <News />
       <Video />
+      <Team />
       <Footer />
     </div>
   )

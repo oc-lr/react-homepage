@@ -1,10 +1,10 @@
 import React from "react"
 
-export function Github({ scale = 1, color = "black" }) {
+export function Github({ size = null, scale = 1, color = "black" }) {
   return (
     <svg
-      width={35 * scale}
-      height={36 * scale}
+      width={size || 35 * scale}
+      height={size || 36 * scale}
       viewBox="0 0 35 36"
       xmlns="http://www.w3.org/2000/svg"
     >

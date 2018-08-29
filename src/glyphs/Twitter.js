@@ -1,10 +1,10 @@
 import React from "react"
 
-export function Twitter({ scale = 1, color = "black" }) {
+export function Twitter({ size = null, scale = 1, color = "black" }) {
   return (
     <svg
-      width={37 * scale}
-      height={30 * scale}
+      width={size || 37 * scale}
+      height={size || 30 * scale}
       viewBox="0 0 37 30"
       xmlns="http://www.w3.org/2000/svg"
     >
