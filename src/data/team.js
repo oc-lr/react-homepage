@@ -1,8 +1,4 @@
-import React from "react"
-import { Card } from "./Card"
-import { Wrapper, Container } from "./styled-components"
-
-const team = [
+export const team = [
   {
     name: "Nathan Wadhwani",
     image: "/images/nathan_wadhwani.png",
@@ -60,14 +56,3 @@ const team = [
     ],
   },
 ]
-
-export function Team() {
-  return (
-    <Wrapper>
-      <div className="f2 blue sans-serif pb5">Team</div>
-      <div className="">
-        <Container>{team.map(member => <Card {...member} />)}</Container>
-      </div>
-    </Wrapper>
-  )
-}
