@@ -18,7 +18,7 @@ export function Card({ name, image, designation, social }) {
 }
 
 const Container = styled.div.attrs({
-  className: "bg-white br3 mr4 mb3 grow soft-shadow1 fv ic pv4 sans-serif",
+  className: "bg-white br3 mr4 mb4 grow soft-shadow1 fv ic pv4 sans-serif",
 })`
   min-width: 18rem;
 

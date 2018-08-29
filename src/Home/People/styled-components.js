@@ -7,9 +7,9 @@ export const Wrapper = styled.div.attrs({
 `
 
 export const Container = styled.div.attrs({
-  className: "ph4",
+  className: "ph4 flex-wrap jc",
 })`
-  width: 80%;
+  max-width: 60rem;
   display: flex;
 
   @media (max-width: 30rem) {
