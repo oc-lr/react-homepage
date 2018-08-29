@@ -5,6 +5,7 @@ import { News } from "./News"
 import { Video } from "./Video"
 import { People } from "./People"
 import { LeftSection } from "./LeftSection"
+import { RightSection } from "./RightSection"
 import { Footer } from "./Footer/Alt"
 
 import { team } from "data/team"
@@ -17,6 +18,8 @@ export function Home() {
       <Hero />
       <News />
       <Video />
+      <LeftSection />
+      <RightSection shade />
       <LeftSection />
       <People title="Advisors" members={advisors} shade />
       <People title="Team" members={team} />

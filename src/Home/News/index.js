@@ -10,9 +10,17 @@ import { Container, Wrapper, NewsItem } from "./styled-components"
 
 const color = "#696969"
 
-export function News() {
+export function News({
+  title = "Project Ajna — winner of Singularity University's Global Impact Challenge used OrigoChain to implement asset tracking!",
+}) {
   return (
     <Wrapper>
+      <div
+        className="f3 tc fw3 lh-copy tracked black-70 sans-serif pb4"
+        style={{ maxWidth: "60rem" }}
+      >
+        {title}
+      </div>
       <Container>
         <NewsItem>
           <Inc42 scale={0.35} color={color} />

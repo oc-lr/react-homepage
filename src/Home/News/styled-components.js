@@ -1,8 +1,13 @@
 import styled from "styled-components"
+import { transparentize } from "polished"
+
+import { blue } from "config"
 
 export const Wrapper = styled.div.attrs({
-  className: "f w-100 bg-black-10 ca",
-})``
+  className: "pv5 fv ca",
+})`
+  background: ${p => (p.shade ? transparentize(0.95, blue) : "transparent")};
+`
 
 export const Container = styled.div.attrs({
   className: "pv4 f f3 black-80 cv flex-wrap jc",
