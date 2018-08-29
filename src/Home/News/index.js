@@ -29,7 +29,7 @@ export function News() {
         <NewsItem>
           <Outlook scale={0.23} color={color} />
         </NewsItem>
-        <NewsItem>
+        <NewsItem href="https://www.indiatoday.in/technology/features/story/meet-ajna-and-signnext-two-kerala-based-startups-that-are-showing-how-tech-can-work-for-masses-1283742-2018-07-12">
           <IndiaToday scale={0.23} color={color} />
         </NewsItem>
         <NewsItem>

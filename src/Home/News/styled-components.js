@@ -17,8 +17,11 @@ export const Container = styled.div.attrs({
   }
 `
 
-export const NewsItem = styled.div.attrs({
+export const NewsItem = styled.a.attrs({
   className: "mr5 mt3",
+  target: "_blank",
+  href:
+    "https://inc42.com/buzz/keralas-ajna-and-delhis-brun-health-ready-to-fly-to-singularity-university-after-winning-global-impact-challenge-india-2018/",
 })`
   @media (max-width: 30rem) {
     margin-right: 0;

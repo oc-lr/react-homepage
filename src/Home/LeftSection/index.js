@@ -1,22 +1,32 @@
 import React from "react"
 import { Wrapper, Container } from "./styled-components"
 
-export function LeftSection() {
+export function LeftSection({ title = "" }) {
   return (
     <Wrapper>
+      <div className="f2 blue sans-serif pb5">{title}</div>
       <Container>
         <div className="">
-          <div className="title:">Ownership Contracts</div>
-          <div className="content:">
-            A new type of trust developed in collaboration with the top trust
-            law attorneys in the world Appoints beneficial ownership and control
-            of the trust to a smart contract Guarantees ownership recognition
-            with legal-financial institutions Legally binds the fiduciary to
-            follow the smart contract's instructions using enforcement under
-            civil and criminal law
+          <div className="f1 fw2 tracked mb4">Ownership Security</div>
+          <div className="f4 black-70 measure lh-copy mb5">
+            <p>
+              Secure the most vital assets of the country to impart trust &
+              confidence in investors.
+            </p>
+            <p>
+              Protect land assets for citizens & investors alike using
+              Blockchain:
+            </p>
+            <ul>
+              <li>Independent Verification</li>
+              <li>Tamper-proof Records</li>
+              <li>Ease of Transaction</li>
+            </ul>
           </div>
         </div>
-        <div className="floating-image">Hello</div>
+        <div className="float">
+          <img src="/images/feature-secure.svg" alt="secure" />
+        </div>
       </Container>
     </Wrapper>
   )

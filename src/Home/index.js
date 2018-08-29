@@ -18,7 +18,7 @@ export function Home() {
       <News />
       <Video />
       <LeftSection />
-      <People title="Advisors" members={advisors} />
+      <People title="Advisors" members={advisors} shade />
       <People title="Team" members={team} />
       <Footer />
     </div>

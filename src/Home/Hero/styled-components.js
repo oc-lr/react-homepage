@@ -16,7 +16,8 @@ export const Card = styled.div.attrs({
 `
 
 export const Tagline = styled.div.attrs({
-  className: "ml4-ns ml0 f2-ns f3 ph2 tc sans-serif lh-copy mb3 bg-re pv2",
+  className:
+    "fw2 blue ml4-ns ml0 f2-ns f3 ph2 tc sans-serif lh-copy mb3 bg-re pv2",
 })``
 
 export const Stack = styled.div.attrs({
