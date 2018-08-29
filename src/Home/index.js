@@ -21,7 +21,6 @@ export function Home() {
       <Video />
       <LeftSection />
       <RightSection shade />
-      <LeftSection />
       <RoadMap />
       <People title="Advisors" members={advisors} shade />
       <People title="Team" members={team} />
