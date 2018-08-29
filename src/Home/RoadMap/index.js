@@ -1,8 +1,6 @@
 import React from "react"
-import { SizeMe } from "react-sizeme"
 
 import { SnakeMap } from "glyphs/SnakeMap"
-
 import { Wrapper, Container } from "./styled-components"
 
 export function RoadMap() {
