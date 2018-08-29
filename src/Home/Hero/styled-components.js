@@ -2,10 +2,16 @@ import styled from "styled-components"
 import { transparentize } from "polished"
 import { blue } from "config"
 
-export const Container = styled.div.attrs({
-  className: "pv3 ph2 pa5-ns ca fv cv",
+export const Wrapper = styled.div.attrs({
+  className: "pv4 fv ca",
 })`
-  background: ${transparentize(0.98, blue)};
+  background: ${p => (p.shade ? transparentize(0.95, blue) : "transparent")};
+`
+
+export const Container = styled.div.attrs({
+  className: "pv3 ph4 pa5-ns ca fv cv",
+})`
+  max-width: 60rem;
 `
 
 export const Card = styled.div.attrs({

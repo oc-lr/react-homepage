@@ -1,14 +1,16 @@
 import React from "react"
-import { Card, Container, Tagline, Stack } from "./styled-components"
+import { Container, Tagline, Stack, Wrapper } from "./styled-components"
+import { Card } from "./Card"
+
+import { tech } from "data/tech"
 
 export function Hero() {
   return (
-    <Container>
-      <Tagline>OrigoChain secures land titles using blockchain</Tagline>
-      <Stack>
-        <Card />
-        <Card />
-      </Stack>
-    </Container>
+    <Wrapper shade>
+      <Container>
+        <Tagline>OrigoChain secures land titles using blockchain.</Tagline>
+        <Stack>{tech.map(item => <Card {...item} />)}</Stack>
+      </Container>
+    </Wrapper>
   )
 }
