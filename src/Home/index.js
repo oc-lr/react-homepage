@@ -6,6 +6,7 @@ import { Video } from "./Video"
 import { People } from "./People"
 import { LeftSection } from "./LeftSection"
 import { RightSection } from "./RightSection"
+import { RoadMap } from "./RoadMap"
 import { Footer } from "./Footer/Alt"
 
 import { team } from "data/team"
@@ -21,6 +22,7 @@ export function Home() {
       <LeftSection />
       <RightSection shade />
       <LeftSection />
+      <RoadMap />
       <People title="Advisors" members={advisors} shade />
       <People title="Team" members={team} />
       <Footer />

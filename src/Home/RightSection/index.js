@@ -21,8 +21,8 @@ export function RightSection({ title = "", shade }) {
               they are inevitable to mitigate fraud.
             </p>
             <p>
-              OrigoChain cuts out most redundant steps in land registry without
-              compriomise on security. With added advantages like:
+              OrigoChain cuts out most of the redundant steps in land registry
+              without compriomising security. With added advantages like:
             </p>
             <ul>
               <li>Faster Transaction Processing</li>

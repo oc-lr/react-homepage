@@ -6,7 +6,7 @@ import { Github } from "glyphs/Github"
 import { Twitter } from "glyphs/Twitter"
 import { Slack } from "glyphs/Slack"
 
-import { Subscribe } from "Start/components/Subscribe"
+import { Subscribe } from "../Subscribe"
 
 import { Container, Wrapper } from "./styled-components.js"
 

@@ -1,8 +1,9 @@
 import React from "react"
 
-export function SnakeMap({ scale = 1, color = "black" }) {
+export function SnakeMap({ scale = 1, color = "black", className }) {
   return (
     <svg
+      className={className}
       width={418 * scale}
       height={512 * scale}
       viewBox="0 0 418 512"
