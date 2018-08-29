@@ -16,7 +16,7 @@ export function News({
   return (
     <Wrapper>
       <div
-        className="f3 tc fw3 lh-copy tracked black-70 sans-serif pb4"
+        className="f3 tc fw3 lh-copy tracked black-70 sans-serif pb4 ph4"
         style={{ maxWidth: "60rem" }}
       >
         {title}
