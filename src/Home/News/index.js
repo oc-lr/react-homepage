@@ -7,12 +7,24 @@ import { Outlook } from "glyphs/Outlook"
 import { IndiaToday } from "glyphs/IndiaToday"
 import { BusinessWorld } from "glyphs/BusinessWorld"
 import { Container, Wrapper, NewsItem } from "./styled-components"
+import { news } from "data/news"
 
 const color = "#696969"
 
-export function News({
-  title = "Project Ajna — winner of Singularity University's Global Impact Challenge used OrigoChain to implement asset tracking!",
-}) {
+const mapping = {
+  indiaToday: <IndiaToday scale={0.23} color={color} />,
+  businessWorld: <BusinessWorld scale={0.33} color={color} />,
+  outlook: <Outlook scale={0.23} color={color} />,
+  hindu: <Hindu scale={0.23} color={"#545454"} />,
+  bloomberg: <Bloomberg scale={0.27} color={color} />,
+  timesOfIndia: <TimesOfIndia scale={0.3} color={"#444444"} />,
+  inc42: <Inc42 scale={0.35} color={color} />,
+}
+
+const ajna =
+  "Project Ajna — winner of Singularity University's Global Impact Challenge used OrigoChain to implement asset tracking!"
+
+export function News({ title = ajna }) {
   return (
     <Wrapper>
       <div
@@ -22,27 +34,9 @@ export function News({
         {title}
       </div>
       <Container>
-        <NewsItem>
-          <Inc42 scale={0.35} color={color} />
-        </NewsItem>
-        <NewsItem>
-          <TimesOfIndia scale={0.3} color={"#444444"} />
-        </NewsItem>
-        <NewsItem>
-          <Bloomberg scale={0.27} color={color} />
-        </NewsItem>
-        <NewsItem>
-          <Hindu scale={0.23} color={"#545454"} />
-        </NewsItem>
-        <NewsItem>
-          <Outlook scale={0.23} color={color} />
-        </NewsItem>
-        <NewsItem href="https://www.indiatoday.in/technology/features/story/meet-ajna-and-signnext-two-kerala-based-startups-that-are-showing-how-tech-can-work-for-masses-1283742-2018-07-12">
-          <IndiaToday scale={0.23} color={color} />
-        </NewsItem>
-        <NewsItem>
-          <BusinessWorld scale={0.33} color={color} />
-        </NewsItem>
+        {news.map(item => {
+          return <NewsItem href={item.link}>{mapping[item.network]}</NewsItem>
+        })}
       </Container>
     </Wrapper>
   )
