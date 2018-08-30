@@ -4,6 +4,8 @@ import { Logo } from "Logo"
 import { Github } from "glyphs/Github"
 import { Twitter } from "glyphs/Twitter"
 
+import { links } from "config"
+
 export function Header() {
   return (
     <div className="w100 bg-blue pa3 ph5-ns">
@@ -14,19 +16,16 @@ export function Header() {
         </div>
         <Right>
           <Links>
-            <Link>Apply</Link>
-            <Link>Sale</Link>
-            <Link>Careers</Link>
             <Link>Culture</Link>
             <Link>Blog</Link>
           </Links>
           <Social>
-            <div className="f cv ml2 pointer">
+            <a target="_blank" href={links.github} className="f cv ml2 pointer">
               <Github color="#fff" scale={0.5} />
-            </div>
-            <div className="f cv ml2 pointer">
+            </a>
+            <a href="" target="_blank" className="f cv ml2 pointer">
               <Twitter color="#fff" scale={0.53} />
-            </div>
+            </a>
           </Social>
         </Right>
       </Container>
