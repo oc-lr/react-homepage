@@ -22,7 +22,7 @@ const mapping = {
 }
 
 const ajna =
-  "Project Ajna — winner of Singularity University's Global Impact Challenge used OrigoChain to implement asset tracking!"
+  "Won Singularity University's Global Impact Challenge 2018 for using OrigoChain in asset tracking!"
 
 export function News({ title = ajna }) {
   return (
