@@ -7,7 +7,7 @@ export const advisors = [
     key: 1,
     name: "Nand Gangwani",
     image: `${prefix}/images/nand_gangwani.jpeg`,
-    designation: "Financial Advisor",
+    designation: "CFO, Evalueserve",
     social: [
       {
         key: 2,
@@ -20,7 +20,7 @@ export const advisors = [
     key: 2,
     name: "Betsabe Botatis",
     image: `${prefix}/images/betsabe_botaitis.png`,
-    designation: "Strategy Advisor",
+    designation: "COO, Aikon",
     social: [
       {
         key: 1,
@@ -33,7 +33,7 @@ export const advisors = [
     key: 3,
     name: "Nikhil Kaushik",
     image: `${prefix}/images/nikhil_kaushik.png`,
-    designation: "Investment Advisor",
+    designation: "Co-founder, Graviky Labs",
     social: [
       {
         key: 3,
