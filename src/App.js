@@ -10,7 +10,7 @@ export default class App extends React.Component {
     return (
       <Router>
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/react-homepage" component={Home} />
           <Route path="*" component={NotFound} />
         </Switch>
       </Router>
