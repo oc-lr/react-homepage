@@ -8,6 +8,7 @@ import { LeftSection } from "./LeftSection"
 import { RightSection } from "./RightSection"
 import { RoadMap } from "./RoadMap"
 import { Footer } from "./Footer/Alt"
+import { Technology } from "./Technology"
 
 import { team } from "data/team"
 import { advisors } from "data/advisors"
@@ -16,6 +17,7 @@ export function Home() {
   return (
     <div>
       <Header />
+      <Technology />
       <Hero />
       <News />
       <Video />

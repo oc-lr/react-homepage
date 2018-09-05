@@ -35,7 +35,11 @@ export function News({ title = ajna }) {
       </div>
       <Container>
         {news.map(item => {
-          return <NewsItem href={item.link}>{mapping[item.network]}</NewsItem>
+          return (
+            <NewsItem key={item.key} href={item.link}>
+              {mapping[item.network]}
+            </NewsItem>
+          )
         })}
       </Container>
     </Wrapper>
