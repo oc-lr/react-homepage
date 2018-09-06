@@ -1,0 +1,17 @@
+@keyframes pulse {
+  from {
+    transform: translate(0, 0) scale(1);
+  }
+
+  50% {
+    transform: scale(1.1) translate(3.5px, 3.5px);
+  }
+
+  to {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+.pulse {
+  animation: pulse 2s ease-in-out infinite;
+}

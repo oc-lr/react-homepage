@@ -3,11 +3,11 @@ import styled from "styled-components"
 import { blue } from "config"
 import { transparentize } from "polished"
 
-export function Slice({ title, subtitle, noTopBorder }) {
+export function Slice({ title, subtitle, noTopBorder, currentSegment }) {
   return (
     <Wrapper>
       <Container noTopBorder={noTopBorder}>
-        <Bubble />
+        <Bubble animate={currentSegment} />
         <div className="f3 mb2">{title}</div>
         <div className="f5 lh-copy black-70">{subtitle}</div>
       </Container>
@@ -15,11 +15,11 @@ export function Slice({ title, subtitle, noTopBorder }) {
   )
 }
 
-const Bubble = ({ radius = 10 }) => (
+const Bubble = ({ radius = 10, animate }) => (
   <svg
     height="100"
     width="100"
-    className="absolute"
+    className={"absolute " + (animate ? "pulse" : "")}
     style={{ left: -12, top: -12 }}
   >
     <circle

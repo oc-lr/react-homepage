@@ -31,6 +31,7 @@ export const timeline = [
   },
   {
     key: 7,
+    currentSegment: true,
     title: "Nov 2018",
     subtitle: "Start pilots",
   },
