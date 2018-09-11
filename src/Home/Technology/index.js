@@ -2,16 +2,20 @@ import React from "react"
 import Particles from "react-particles-js"
 import { Container, Wrapper, Tagline } from "./styled-components"
 
-import { callOutHeight } from "config"
-
 export function Technology() {
   return (
     <Wrapper>
       <Container>
-        <Tagline>Securing Investments without Intermediaries</Tagline>
+        <div className="absolute ph4 pb5">
+          <Tagline>Securing Investments without Intermediaries</Tagline>
+          <div className="white-80 sans-serif lh-copy fw2">
+            Protocol for standardized management of asset ownership using
+            blockchain
+          </div>
+          <div className="w100 h3" />
+        </div>
         <Particles
-          width="100%"
-          height={`${callOutHeight}rem`}
+          height={"100%"}
           params={{
             particles: {
               opacity: {
@@ -38,7 +42,7 @@ export function Technology() {
               },
             },
           }}
-          style={{ width: "100%" }}
+          style={{ display: "absolute", width: "100%" }}
         />
       </Container>
     </Wrapper>

@@ -16,8 +16,10 @@ import { advisors } from "data/advisors"
 export function Home() {
   return (
     <div>
-      <Header />
-      <Technology />
+      <div className="vh-100 fv bg-green">
+        <Header />
+        <Technology />
+      </div>
       <Hero />
       <News />
       <Video />
