@@ -6,7 +6,7 @@ export const Wrapper = styled.div.attrs({
 })``
 
 export const Container = styled.div.attrs({
-  className: "bg-blue",
+  className: "bg-blue min-vh-100",
 })``
 
 export const Tagline = styled.div.attrs({
