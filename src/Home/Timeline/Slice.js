@@ -38,7 +38,7 @@ const Wrapper = styled.div.attrs({
 })``
 
 const Container = styled.div.attrs({
-  className: "pb5 pt4 pl4 sans-serif relative tr1",
+  className: "pb5 pt4 pl4 sans-serif relative tr3",
 })`
   width: 15rem;
   border-left: 0.25rem solid ${blue};
