@@ -2,6 +2,7 @@ import React from "react"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 
 import { Home } from "./Home"
+import { Blog } from "./Blog"
 
 const NotFound = () => <div>Not Found</div>
 
@@ -14,6 +15,7 @@ export default class App extends React.Component {
       <Router basename={basename}>
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/blog" component={Blog} />
           <Route path="*" component={NotFound} />
         </Switch>
       </Router>
