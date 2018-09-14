@@ -1,7 +1,9 @@
 import React from "react"
 import { Wrapper, Container } from "./sc"
 
-export function Partners() {
+import { partners } from "data/partners"
+
+export function Partners({ partners = partners }) {
   return (
     <Wrapper>
       <div

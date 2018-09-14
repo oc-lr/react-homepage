@@ -14,37 +14,49 @@ export function Technology() {
           </div>
           <div className="w100 h3" />
         </div>
-        <Particles
-          height={"100%"}
-          params={{
-            particles: {
-              opacity: {
-                anim: {
-                  enable: true,
-                  opacity_min: 0.05,
-                  speed: 2,
-                  sync: false,
-                },
-                value: 0.1,
-              },
-              number: {
-                value: 20,
-                density: {
-                  enable: false,
-                },
-              },
-              line_linked: {
-                shadow: {
-                  enable: true,
-                  color: "#000",
-                  blur: 0,
-                },
-              },
-            },
-          }}
-          style={{ display: "absolute", width: "100%" }}
-        />
+        <div>
+          <PP />
+          <PP />
+          <PP />
+          <PP />
+          <PP />
+          <PP />
+        </div>
       </Container>
     </Wrapper>
   )
 }
+
+const PP = () => (
+  <Particles
+    height={"100%"}
+    width="80%"
+    params={{
+      particles: {
+        opacity: {
+          anim: {
+            enable: true,
+            opacity_min: 0.05,
+            speed: 2,
+            sync: false,
+          },
+          value: 0.1,
+        },
+        number: {
+          value: 10,
+          density: {
+            enable: false,
+          },
+        },
+        line_linked: {
+          shadow: {
+            enable: true,
+            color: "#000",
+            blur: 0,
+          },
+        },
+      },
+    }}
+    style={{ display: "absolute", width: "100%" }}
+  />
+)
