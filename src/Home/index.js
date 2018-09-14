@@ -26,8 +26,8 @@ export function Home() {
       <LeftSection />
       <RightSection shade />
       <Timeline />
-      <People title="Advisors" members={advisors} shade />
       <People title="Team" members={team} />
+      <People title="Advisors" members={advisors} shade />
       <Footer />
     </div>
   )

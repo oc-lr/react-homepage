@@ -7,7 +7,7 @@ export function Technology() {
     <Wrapper>
       <Container>
         <div className="absolute ph4 pb5">
-          <Tagline>Securing Investments without Intermediaries</Tagline>
+          <Tagline>Securing Assets without Intermediaries</Tagline>
           <div className="white-80 sans-serif lh-copy fw2">
             Protocol for standardized management of asset ownership using
             blockchain
@@ -15,19 +15,19 @@ export function Technology() {
           <div className="w100 h3" />
         </div>
         <div>
-          <PP />
-          <PP />
-          <PP />
-          <PP />
-          <PP />
-          <PP />
+          <PP count={8} />
+          <PP count={10} />
+          <PP count={10} />
+          <PP count={5} />
+          <PP count={5} />
+          <PP count={5} />
         </div>
       </Container>
     </Wrapper>
   )
 }
 
-const PP = () => (
+const PP = ({ count = 10 }) => (
   <Particles
     height={"100%"}
     width="80%"
@@ -43,7 +43,7 @@ const PP = () => (
           value: 0.1,
         },
         number: {
-          value: 10,
+          value: count,
           density: {
             enable: false,
           },
