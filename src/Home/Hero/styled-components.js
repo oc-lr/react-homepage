@@ -3,7 +3,7 @@ import { transparentize } from "polished"
 import { blue } from "config"
 
 export const Wrapper = styled.div.attrs({
-  className: "pv4 mv6 mv0-ns fv ca",
+  className: "pv4 fv ca",
 })`
   background: ${p => (p.shade ? transparentize(0.95, blue) : "transparent")};
 `

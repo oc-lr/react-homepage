@@ -9,6 +9,7 @@ import { RightSection } from "./RightSection"
 import { Timeline } from "./Timeline"
 import { Footer } from "./Footer/Alt"
 import { Technology } from "./Technology"
+import { Platform } from "./Platform"
 
 import { team } from "data/team"
 import { advisors } from "data/advisors"
@@ -19,6 +20,9 @@ export function Home() {
       <div className="vh-100 fv bg-green">
         <Header />
         <Technology />
+      </div>
+      <div className="pt5 pt0-ns">
+        <Platform />
       </div>
       <Hero />
       <News />

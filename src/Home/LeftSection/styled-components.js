@@ -10,7 +10,7 @@ export const Wrapper = styled.div.attrs({
 `
 
 export const Container = styled.div.attrs({
-  className: "jb ph4 pv1 pt3-ns pb5-ns sans-serif f ca",
+  className: "jb ph4 pv1 pt3-ns sans-serif f ca",
 })`
   width: 80%;
   max-width: 60rem;

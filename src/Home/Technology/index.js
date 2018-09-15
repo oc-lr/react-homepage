@@ -15,12 +15,7 @@ export function Technology() {
           <div className="w100 h3" />
         </div>
         <div>
-          <PP count={8} />
-          <PP count={10} />
-          <PP count={10} />
-          <PP count={5} />
-          <PP count={5} />
-          <PP count={5} />
+          <PP count={12} />
         </div>
       </Container>
     </Wrapper>
@@ -29,8 +24,8 @@ export function Technology() {
 
 const PP = ({ count = 10 }) => (
   <Particles
-    height={"100%"}
-    width="80%"
+    height={"100vh"}
+    width="100%"
     params={{
       particles: {
         opacity: {
