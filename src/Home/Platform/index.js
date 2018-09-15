@@ -4,7 +4,7 @@ import { OrigoPlatform } from "glyphs/OrigoPlatform"
 import { blue } from "config"
 
 export function Platform() {
-  return <LeftSection TextBlock={() => <TB />} MediaBlock={MB} />
+  return <LeftSection shade TextBlock={() => <TB />} MediaBlock={MB} />
 }
 
 const TB = () => (

@@ -10,6 +10,7 @@ import { Timeline } from "./Timeline"
 import { Footer } from "./Footer/Alt"
 import { Technology } from "./Technology"
 import { Platform } from "./Platform"
+import { ReplaceCentralization } from "./ReplaceCentralization"
 
 import { team } from "data/team"
 import { advisors } from "data/advisors"
@@ -24,6 +25,7 @@ export function Home() {
       <div className="pt5 pt0-ns">
         <Platform />
       </div>
+      <ReplaceCentralization />
       <Hero />
       <News />
       <Video />
