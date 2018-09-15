@@ -4,16 +4,16 @@ import { transparentize } from "polished"
 import { blue } from "config"
 
 export const Wrapper = styled.div.attrs({
-  className: "pv5 fv ca",
+  className: "ph4 pv5 fv ca ",
 })`
   background: ${p => (p.shade ? transparentize(0.95, blue) : "transparent")};
 `
 
 export const Container = styled.div.attrs({
-  className: "jb ph4 pv1 pt3-ns sans-serif f ca",
+  className: "pv1 cv pt3-ns sans-serif f",
 })`
-  width: 80%;
-  max-width: 60rem;
+  width: 100%;
+  max-width: 70rem;
 
   @media (max-width: 30rem) {
     width: 100%;
