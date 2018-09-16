@@ -11,6 +11,7 @@ import { Footer } from "./Footer/Alt"
 import { Technology } from "./Technology"
 import { Platform } from "./Platform"
 import { ReplaceCentralization } from "./ReplaceCentralization"
+import { TokenBenefits } from "./TokenBenefits"
 
 import { team } from "data/team"
 import { advisors } from "data/advisors"
@@ -25,6 +26,7 @@ export function Home() {
       <div className="pt5 pt0-ns">
         <Platform />
       </div>
+      <TokenBenefits />
       <ReplaceCentralization />
       <Hero />
       <News />
