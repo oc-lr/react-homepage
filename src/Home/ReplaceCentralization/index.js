@@ -15,7 +15,7 @@ export function ReplaceCentralization() {
 const MB = () => <div className="mb5 mb0-ns" />
 
 const TB = () => (
-  <div className="pl5-ns">
+  <div className="pl5-ns pb6">
     <div className="f1 fw2 tracked mb4">
       It's time to replace centralized record keeping of vital assets
     </div>

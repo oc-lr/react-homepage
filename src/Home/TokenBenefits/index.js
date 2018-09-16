@@ -6,7 +6,7 @@ import { tokenBenefits } from "data/token-benefits"
 
 export function TokenBenefits() {
   return (
-    <Wrapper>
+    <Wrapper backgroundImage="wave_down.svg">
       <Container>{tokenBenefits.map(item => <Card {...item} />)}</Container>
     </Wrapper>
   )
