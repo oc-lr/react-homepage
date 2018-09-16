@@ -7,6 +7,11 @@ export const Wrapper = styled.div.attrs({
   className: "pv5 fv ca",
 })`
   background: ${p => (p.shade ? transparentize(0.95, blue) : "transparent")};
+  ${p =>
+    p.backgroundImage
+      ? `background: url(/images/backgrounds/${p.backgroundImage})`
+      : ""};
+  background-size: cover;
 `
 
 export const Container = styled.div.attrs({

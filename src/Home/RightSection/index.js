@@ -9,9 +9,10 @@ export function RightSection({
   shade,
   MediaBlock = () => <MB />,
   TextBlock = () => <TB />,
+  backgroundImage = null,
 }) {
   return (
-    <Wrapper shade={shade}>
+    <Wrapper shade={shade} backgroundImage={backgroundImage}>
       <Container>
         <MediaBlock />
         <TextBlock />

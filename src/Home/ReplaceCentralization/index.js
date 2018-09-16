@@ -2,7 +2,13 @@ import React from "react"
 import { RightSection } from "../RightSection"
 
 export function ReplaceCentralization() {
-  return <RightSection MediaBlock={() => <MB />} TextBlock={() => <TB />} />
+  return (
+    <RightSection
+      backgroundImage="wave_up.svg"
+      MediaBlock={() => <MB />}
+      TextBlock={() => <TB />}
+    />
+  )
 }
 
 const MB = () => <div className="mb5 mb0-ns" />
