@@ -1,8 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import { lighten } from "polished"
-
-import { blue } from "config"
 
 const Wrapper = styled.div.attrs({
   className: "",
@@ -29,16 +26,5 @@ const Container = styled.div.attrs({
 })`
   @media (max-width: 30rem) {
     margin-right: 0rem;
-  }
-`
-
-const Button = styled.div.attrs({
-  className: "flex pv3 ph4 ca white br2 pointer tr1",
-})`
-  height: 2.5rem;
-  background: ${blue}
-
-  &:hover {
-    background: ${lighten(0.1, blue)}
   }
 `
