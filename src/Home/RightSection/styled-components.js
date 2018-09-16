@@ -25,3 +25,9 @@ export const Container = styled.div.attrs({
     flex-direction: column;
   }
 `
+
+export const Text = styled.div.attrs({
+  className: "fw1 f5",
+})`
+  max-width: 35rem;
+`

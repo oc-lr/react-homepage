@@ -17,7 +17,7 @@ export function Footer() {
         <div>
           <Logo color="white" scale={0.3} />
           <Content>
-            <div className="flex">
+            <div className="flex w-100">
               <TextLinks title="Company" links={companyLinks} />
               <TextLinks title="Terms & Conditions" links={terms} />
             </div>

@@ -1,5 +1,5 @@
 import React from "react"
-import { Wrapper, Container } from "./styled-components"
+import { Wrapper, Container, Text } from "./styled-components"
 import { urlPrefix } from "config"
 
 const prefix = process.env["NODE_ENV"] === "production" ? urlPrefix : ""
@@ -30,7 +30,7 @@ const MB = () => (
 const TB = () => (
   <div className="pl5-ns">
     <div className="f1 fw2 tracked mb4">Efficient Process</div>
-    <div className="f4 black-70 measure lh-copy">
+    <Text className="black-70 measure lh-copy">
       <p>
         Redundant verification, validation & maintenance of duplicate documents
         are all mandated in current land registry system because they are
@@ -45,6 +45,6 @@ const TB = () => (
         <li>Reduction of Tax Fraud</li>
         <li>Automated Asset Tracking</li>
       </ul>
-    </div>
+    </Text>
   </div>
 )

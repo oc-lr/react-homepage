@@ -1,5 +1,5 @@
 import React from "react"
-import { Wrapper, Container } from "./styled-components"
+import { Wrapper, Container, Text } from "./styled-components"
 import { urlPrefix } from "config"
 
 const prefix = process.env["NODE_ENV"] === "production" ? urlPrefix : ""
@@ -24,7 +24,7 @@ export function LeftSection({
 const TB = () => (
   <div className="">
     <div className="f1 fw2 tracked mb4">Ownership Security</div>
-    <div className="f4 black-70 measure lh-copy mb5">
+    <Text className="black-70 measure lh-copy mb5">
       <p>
         Secure the most vital assets of the country to impart trust & confidence
         in investors.
@@ -37,12 +37,12 @@ const TB = () => (
         <li>Tamper-proof Records</li>
         <li>Ease of Transaction</li>
       </ul>
-    </div>
+    </Text>
   </div>
 )
 
 const MB = () => (
-  <div className="float">
+  <div className="float ml5-ns">
     <img src={`${prefix}/images/feature-secure.svg`} alt="secure" />
   </div>
 )
