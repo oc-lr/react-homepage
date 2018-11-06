@@ -17,8 +17,8 @@ export const Wrapper = styled.div.attrs({
 export const Container = styled.div.attrs({
   className: "f ph4 pv1 pt3-ns pb5-ns sans-serif",
 })`
-  width: 80%;
-  max-width: 60rem;
+  // width: 80%;
+  max-width: 70rem;
 
   @media (max-width: 30rem) {
     width: 100%;

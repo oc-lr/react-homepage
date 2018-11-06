@@ -21,6 +21,7 @@ export const tokenBenefits = [
     key: 2,
     title: "Security",
     image: `${prefix}/images/features/security.svg`,
-    description: "Assets becomes very secure through ownership traces",
+    description:
+      "Assets are permenantly recorded on blockchain securing data for buyers and sellers",
   },
 ]

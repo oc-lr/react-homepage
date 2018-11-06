@@ -12,7 +12,7 @@ export function Card({ title, image, description }) {
     <Wrapper>
       <Container>
         <img className="br-100 w4" src={image} alt="profile_pic" />
-        <div className="pt3 pb1 black-90 f3" style={{ lineHeight: "1.5rem" }}>
+        <div className="pt4 pb2 black-90 f3" style={{ lineHeight: "1.5rem" }}>
           {title}
         </div>
         <div className="pt2 pb3 black-70 fw1 f5 tc">{description}</div>
